@@ -1,0 +1,109 @@
+.text {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.container {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: grid;
+    place-items: center;
+}
+
+.bottone {
+    background: linear-gradient(45deg, #007bff, #00c6ff);
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    font-weight: bold;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+}
+  
+.bottone:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+  
+.bottone:active {
+    transform: scale(0.97);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+} 
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #F1971F;
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(5px); /* Effetto vetro opaco */
+}
+  
+.login-box {
+    background: rgba(255, 255, 255, 0.8); /* Box trasparente */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Stile base per gli input */
+input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+  
+/* Effetti hover e focus */
+input:hover {
+    border-color: #007BFF;
+}
+  
+input:focus {
+    border-color: #007BFF;
+    outline: none;
+    box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.5);
+}
+  
+/* Stile per il placeholder */
+input::placeholder {
+    color: #999;
+    font-style: italic;
+}
+  
+/* Modalità scura */
+@media (prefers-color-scheme: dark) {
+    input {
+      background-color: #222;
+      color: #fff;
+      border: 1px solid #555;
+    }
+    input::placeholder {
+      color: #bbb;
+    }
+}
+
+/* Stile base per le label */
+label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+  
+/* Modalità scura */
+@media (prefers-color-scheme: dark) {
+    label {
+      color: #ddd;
+    }
+}  
